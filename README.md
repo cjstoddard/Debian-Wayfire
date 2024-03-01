@@ -17,6 +17,7 @@ cd ..
 git clone https://github.com/WayfireWM/wcm.git
 
 cd wcm
+
 meson build --prefix=/usr --buildtype=release
 ninja -C build
 sudo ninja -C build install

@@ -20,6 +20,8 @@ sed -i '/# panel = wf-panel/c\\\\panel = wf-panel' .config/wayfire/wayfire.ini
 
 sed -i '/# dock = wf-dock/c\\\\dock = wf-dock' .config/wayfire/wayfire.ini
 
+sed -i '/command_launcher = wofi/c\\command_launcher = wofi --show=drun' .config/wayfire/wayfire.ini
+
 mkdir -p \~/.config/wofi
 
 > cat > .config/wofi/config << EOF    

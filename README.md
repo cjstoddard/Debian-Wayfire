@@ -13,12 +13,14 @@ sudo ninja -C build install
 curl https://raw.githubusercontent.com/WayfireWM/wf-shell/master/wf-shell.ini.example \~/.config/wf-shell.ini
 
 cd ..
+
 git clone https://github.com/WayfireWM/wcm.git
 
 cd wcm
 meson build --prefix=/usr --buildtype=release
 ninja -C build
 sudo ninja -C build install
+
 cd ..
 
 mkdir .config/wayfire  

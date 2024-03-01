@@ -5,9 +5,12 @@ sudo apt install alacritty gir1.2-dbusmenu-glib-0.4 gir1.2-dbusmenu-gtk3-0.4 kan
 
 git clone https://github.com/WayfireWM/wf-shell.git
 
-cd wf-shell  
-meson build --prefix=/usr --buildtype=release  
-ninja -C build  
+cd wf-shell
+
+meson build --prefix=/usr --buildtype=release
+
+ninja -C build
+
 sudo ninja -C build install
 
 curl https://raw.githubusercontent.com/WayfireWM/wf-shell/master/wf-shell.ini.example \~/.config/wf-shell.ini
@@ -15,14 +18,19 @@ curl https://raw.githubusercontent.com/WayfireWM/wf-shell/master/wf-shell.ini.ex
 cd ..
 
 git clone https://github.com/WayfireWM/wcm.git
+
 cd wcm
+
 meson build --prefix=/usr --buildtype=release
+
 ninja -C build
+
 sudo ninja -C build install
 
 cd ..
 
-mkdir .config/wayfire  
+mkdir .config/wayfire
+
 cp /usr/share/doc/wayfire/examples/wayfire.ini .config/wayfire/wayfire.ini
 
 sed -i '/# panel = wf-panel/c\\panel = wf-panel' .config/wayfire/wayfire.ini

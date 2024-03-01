@@ -14,6 +14,7 @@ ninja -C build
 sudo ninja -C build install
 
 wget https://raw.githubusercontent.com/WayfireWM/wf-shell/master/wf-shell.ini.example
+
 mv wf-shell.ini.example .config/wf-shell.ini
 
 cd ..

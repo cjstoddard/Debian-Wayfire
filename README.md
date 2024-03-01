@@ -15,9 +15,7 @@ curl https://raw.githubusercontent.com/WayfireWM/wf-shell/master/wf-shell.ini.ex
 cd ..
 
 git clone https://github.com/WayfireWM/wcm.git
-
 cd wcm
-
 meson build --prefix=/usr --buildtype=release
 ninja -C build
 sudo ninja -C build install
